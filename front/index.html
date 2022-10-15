@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+		<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+		<link href="./public/css/headBar.css" rel="stylesheet">
+		<link href="./public/css/homePage.css" rel="stylesheet">
+		<link href="./public/css/styles.css" rel="stylesheet">
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self'; script-src 'self'"
+		/>
+		<meta
+			http-equiv="X-Content-Security-Policy"
+			content="default-src 'self'; script-src 'self'"
+		/>
+		<title>AnimeCards</title>
+	</head>
+	<body>
+		<div class="mainApp">
+			<div class="topBar">
+				<div class="titleBar">
+					<div class="title">
+						AnimeCards
+					</div>
+				</div>
+				<div class="titleBarBtns">
+					<button id="minimizeBtn" class="topBtn minimizeBtn"></button>
+					<button id="maxMinBtn" class="topBtn maxMinBtn"></button>
+					<button id="closeBtn" class="topBtn closeBtn"></button>
+				</div>
+			</div>
+			<div class="contentArea">
+				<div class="contentPages">
+					<canvas id="canvas"></canvas>					
+				</div>
+			</div>
+		</div>
+		<script src="./dist/GLHF/GLHF.interface.ecs.js"></script>
+		<script src="./dist/GLHF/GLHF.class.ecs.js"></script>
+		<script src="./dist/GLHF/Vector/Vector.interface.js"></script>
+		<script src="./dist/GLHF/Vector/Vector.class.js"></script>
+		<script src="./dist/GLHF/System/System.interface.js"></script>
+		<script src="./dist/GLHF/System/System.class.js"></script>
+		<script src="./dist/GLHF/Scene/Scene.interface.js"></script>
+		<script src="./dist/GLHF/Scene/Scene.class.js"></script>
+		<script src="./dist/GLHF/Component/Component.class.js"></script>
+		<script src="./dist/GLHF/Component/Component.interface.js"></script>
+		<script src="./dist/GLHF/Entity/Entity.interface.js"></script>
+		<script src="./dist/GLHF/Entity/Entity.class.js"></script>
+		<script src="./dist/src/Systems/ConsolePrintSystem.class.js"></script>
+		<script src="./dist/src/Components/PositionComponent.class.js"></script>
+		<script src="./dist/src/Components/MovableComponent.class.js"></script>
+		<script src="./dist/src/LevelState.class.js"></script>
+		<script src="./dist/renderer.js"></script>
+	</body>
+</html>
